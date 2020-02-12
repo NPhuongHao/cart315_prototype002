@@ -35,7 +35,7 @@ public class leftrightmove : VarStorage
         boundLeft = originalPos.x;
         boundRight = boundLeft + moveAreaX - objSize.x;
 
-        speedX = Random.Range(3.0f, 10.0f);
+        speedX = Random.Range(10.0f, 20.0f);
 
         this.gameObject.name = "obj" + thisBox;
 
@@ -65,7 +65,7 @@ public class leftrightmove : VarStorage
             if (Input.GetMouseButtonDown(0))
             {
                 speedX = 0;
-                speedZ = -6;
+                speedZ = -30;
             }
 
             //change the direction if the object hits the bounds
